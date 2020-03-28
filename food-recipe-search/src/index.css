@@ -20,9 +20,10 @@ html {
 
 h1 {
     font-size: 8rem;
+    font-family: "Open Sans", sans-serif;
     letter-spacing: 0.1rem;
     font-style: italic;
-    color: #40b48e;
+    color: #123a52;
     text-shadow: 0 0.2rem 5rem rgb(119, 115, 115);
     text-transform: uppercase;
     margin: 4rem 0;
@@ -34,7 +35,7 @@ h1 {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #d3d3d3;
+    background-color: #9ad9ea;
     border-radius: 0.5rem;
     margin-bottom: 5rem;
     box-shadow: 1rem 2rem 5rem #aaa;
@@ -45,7 +46,7 @@ h1 {
     position: absolute;
     top: -3rem;
     left: 0;
-    background-color: rgb(233, 72, 72);
+    background-color: #e9f7f1;
     width: calc(100% - 0.4rem);
     border-radius: 0.5rem;
     padding: 0.2rem;
@@ -53,9 +54,9 @@ h1 {
 
 .flash-message h3 {
     font-size: 1.8rem;
-    color: #fff;
+    color: #ed2c49;
     font-weight: 400;
-    text-transform: uppercase;
+    text-transform: capitalize;
     text-align: center;
 }
 
@@ -77,7 +78,7 @@ h1 {
 .search-form input[type="submit"] {
     width: 25%;
     text-transform: uppercase;
-    background-color: #40b48e;
+    background-color: #ed2c49;
     color: #fff;
 }
 
@@ -155,4 +156,83 @@ h1 {
 .ingredient-weight {
     color: #40b48e;
     font-size: 1.3rem;
+}
+
+
+/* Styles for the element being animated */
+
+.display-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 2rem;
+    padding-left: 4px;
+    text-align: left;
+    color: #123a52;
+    width: 100rem;
+    height: 5rem;
+    background-color: #dcdde6;
+    border-radius: 3px;
+    margin: 10px auto;
+}
+
+.scroll-left {
+    height: 50px;
+    overflow: hidden;
+    position: relative;
+}
+
+.scroll-left p {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    line-height: 50px;
+    text-align: center;
+    /* Starting position */
+    -moz-transform: translateX(100%);
+    -webkit-transform: translateX(100%);
+    transform: translateX(100%);
+    /* Apply animation to this element */
+    -moz-animation: scroll-left 15s linear infinite;
+    -webkit-animation: scroll-left 15s linear infinite;
+    animation: scroll-left 15s linear infinite;
+}
+
+
+/* Move it (define the animation) */
+
+@-moz-keyframes scroll-left {
+    0% {
+        -moz-transform: translateX(100%);
+    }
+    100% {
+        -moz-transform: translateX(-100%);
+    }
+}
+
+@-webkit-keyframes scroll-left {
+    0% {
+        -webkit-transform: translateX(100%);
+    }
+    100% {
+        -webkit-transform: translateX(-100%);
+    }
+}
+
+@keyframes scroll-left {
+    0% {
+        -moz-transform: translateX(100%);
+        /* Browser bug fix */
+        -webkit-transform: translateX(100%);
+        /* Browser bug fix */
+        transform: translateX(100%);
+    }
+    100% {
+        -moz-transform: translateX(-100%);
+        /* Browser bug fix */
+        -webkit-transform: translateX(-100%);
+        /* Browser bug fix */
+        transform: translateX(-100%);
+    }
 }

@@ -5,6 +5,7 @@ import { v4 as uuidv4 } from "uuid";
 import "./App.css";
 import AddRecipe from "./components/AddRecipe";
 import Recipes from "./components/Recipes";
+import AnimateText from "./components/AnimateText";
 
 function App() {
 	const [query, setQuery] = useState("");
@@ -43,6 +44,7 @@ function App() {
 
 	return (
 		<div className="App">
+			<AnimateText />
 			<h1>Recipe Bowl</h1>
 
 			<AddRecipe
