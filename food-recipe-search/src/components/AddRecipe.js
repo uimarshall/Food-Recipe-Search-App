@@ -1,9 +1,12 @@
 import React from "react";
+import FlashMessage from "./FlashMessage";
 
-const AddRecipe = ({ handleSubmit, handleChange, query }) => {
+const AddRecipe = ({ handleSubmit, handleChange, query, message }) => {
 	return (
 		<>
 			<form className="search-form" onSubmit={handleSubmit}>
+				{message ? <FlashMessage message={message} /> : null}
+
 				<input
 					type="text"
 					placeholder="Search Food"

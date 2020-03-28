@@ -5,7 +5,7 @@
     text-decoration: none;
     list-style-type: none;
     outline: none;
-    box-sizing: border-box
+    box-sizing: border-box;
 }
 
 html {
@@ -41,7 +41,7 @@ h1 {
     position: relative;
 }
 
-.alert {
+.flash-message {
     position: absolute;
     top: -3rem;
     left: 0;
@@ -51,7 +51,7 @@ h1 {
     padding: 0.2rem;
 }
 
-.alert h3 {
+.flash-message h3 {
     font-size: 1.8rem;
     color: #fff;
     font-weight: 400;
