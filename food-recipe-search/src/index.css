@@ -1,238 +1,341 @@
 * {
-    font-family: "Source Sans Pro", sans-serif;
-    margin: 0;
-    padding: 0;
-    text-decoration: none;
-    list-style-type: none;
-    outline: none;
-    box-sizing: border-box;
+	font-family: "Source Sans Pro", sans-serif;
+	margin: 0;
+	padding: 0;
+	text-decoration: none;
+	list-style-type: none;
+	outline: none;
+	box-sizing: border-box;
 }
 
 html {
-    font-size: 62.5%;
+	font-size: 62.5%;
 }
 
 .App {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 }
 
 h1 {
-    font-size: 8rem;
-    font-family: "Open Sans", sans-serif;
-    letter-spacing: 0.1rem;
-    font-style: italic;
-    color: #123a52;
-    text-shadow: 0 0.2rem 5rem rgb(119, 115, 115);
-    text-transform: uppercase;
-    margin: 4rem 0;
+	font-size: 8rem;
+	font-family: "Open Sans", sans-serif;
+	letter-spacing: 0.1rem;
+	font-style: italic;
+	color: #123a52;
+	text-shadow: 0 0.2rem 5rem rgb(119, 115, 115);
+	text-transform: uppercase;
+	margin: 4rem 0;
 }
 
 .search-form {
-    width: 60rem;
-    height: 10rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #9ad9ea;
-    border-radius: 0.5rem;
-    margin-bottom: 5rem;
-    box-shadow: 1rem 2rem 5rem #aaa;
-    position: relative;
+	width: 60rem;
+	height: 10rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #123a52;
+	border-radius: 0.5rem;
+	margin-bottom: 5rem;
+	box-shadow: 1rem 2rem 5rem #aaa;
+	position: relative;
 }
 
 .flash-message {
-    position: absolute;
-    top: -3rem;
-    left: 0;
-    background-color: #e9f7f1;
-    width: calc(100% - 0.4rem);
-    border-radius: 0.5rem;
-    padding: 0.2rem;
+	position: absolute;
+	top: -3rem;
+	left: 0;
+	background-color: #e9f7f1;
+	width: calc(100% - 0.4rem);
+	border-radius: 0.5rem;
+	padding: 0.2rem;
 }
 
 .flash-message h3 {
-    font-size: 1.8rem;
-    color: #ed2c49;
-    font-weight: 400;
-    text-transform: capitalize;
-    text-align: center;
+	font-size: 1.8rem;
+	color: #ed2c49;
+	font-weight: 400;
+	text-transform: capitalize;
+	text-align: center;
 }
 
 .search-form input {
-    font-size: 1.6rem;
-    border: none;
-    border-bottom: 0.1rem solid #ccc;
-    margin: 0 0.5rem;
-    border-radius: 0.5rem;
-    height: 3rem;
+	font-size: 1.6rem;
+	border: none;
+	border-bottom: 0.1rem solid #ccc;
+	margin: 0 0.5rem;
+	border-radius: 0.5rem;
+	height: 3rem;
 }
 
 .search-form input[type="text"] {
-    padding: 0 0.5rem;
-    width: 60%;
-    color: #555;
+	padding: 0 0.5rem;
+	width: 60%;
+	color: #555;
 }
 
 .search-form input[type="submit"] {
-    width: 25%;
-    text-transform: uppercase;
-    background-color: #ed2c49;
-    color: #fff;
+	width: 25%;
+	text-transform: uppercase;
+	background-color: #ed2c49;
+	color: #fff;
 }
 
 .recipes {
-    width: 90%;
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: flex-start;
+	width: 90%;
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: flex-start;
 }
 
 .recipe {
-    width: 30rem;
-    margin: 3rem;
-    display: flex;
-    flex-direction: column;
-    background-color: #d3d3d3;
-    padding: 2rem;
-    position: relative;
-    border-radius: 0.5rem;
-    box-shadow: 2rem 3rem 5rem #aaa;
+	width: 30rem;
+	margin: 3rem;
+	display: flex;
+	flex-direction: column;
+	background-color: #eeeeee;
+	padding: 2rem;
+	position: relative;
+	border-radius: 0.5rem;
+	/* box-shadow: 2rem 3rem 5rem #aaa; */
 }
 
 .recipe h2 {
-    background-color: rgba(161, 161, 161, 0.7);
-    border-radius: 0.5rem;
-    padding: 0.3rem 0.5rem;
-    position: absolute;
-    top: 2.5rem;
-    left: 2.5rem;
-    right: 2.5rem;
-    font-size: 2.5rem;
-    font-weight: 400;
-    text-shadow: 0 0.5rem 0.5rem #555;
-    color: #fff;
+	background-color: rgba(161, 161, 161, 0.7);
+	border-radius: 0.5rem;
+	padding: 0.3rem 0.5rem;
+	position: absolute;
+	top: 2.5rem;
+	left: 2.5rem;
+	right: 2.5rem;
+	font-size: 2.5rem;
+	font-weight: 400;
+	text-shadow: 0 0.5rem 0.5rem #555;
+	color: #fff;
 }
 
 .recipe img {
-    border-radius: 0.5rem;
-    object-fit: cover;
+	border-radius: 0.5rem;
+	object-fit: cover;
 }
 
 .recipe a {
-    font-size: 1.8rem;
-    color: #40b48e;
+	font-size: 1.8rem;
+	color: #d83b50;
+	margin-top: 5px;
 }
 
 .recipe button {
-    font-size: 2rem;
-    text-transform: uppercase;
-    color: #fff;
-    background-color: #40b48e;
-    border: none;
-    border-radius: 0.5rem;
-    height: 3rem;
+	font-size: 2rem;
+	text-transform: capitalize;
+	color: #fff;
+	background-color: #123a52;
+	border: none;
+	border-radius: 1rem;
+	height: 3rem;
+	cursor: pointer;
+	margin-top: 5px;
 }
 
 .ingredient-list {
-    margin-top: 1rem;
-    background-color: #f0f0f0;
-    border-radius: 0.5rem;
-    padding: 0.5rem;
+	margin-top: 1rem;
+	background-color: #f0f0f0;
+	border-radius: 0.5rem;
+	padding: 0.5rem;
 }
 
 .ingredient-list li {
-    margin: 0.5rem 0;
+	margin: 0.5rem 0;
 }
 
 .ingredient-text {
-    font-size: 1.5rem;
-    color: #888;
+	font-size: 1.5rem;
+	color: #888;
 }
 
 .ingredient-weight {
-    color: #40b48e;
-    font-size: 1.3rem;
+	color: #d83b50;
+	font-size: 1.3rem;
 }
-
 
 /* Styles for the element being animated */
 
 .display-text {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    font-size: 2rem;
-    padding-left: 4px;
-    text-align: left;
-    color: #123a52;
-    width: 100rem;
-    height: 5rem;
-    background-color: #dcdde6;
-    border-radius: 3px;
-    margin: 10px auto;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	font-size: 2rem;
+	padding-left: 4px;
+	text-align: left;
+	color: #123a52;
+	width: 100rem;
+	height: 5rem;
+	background-color: #dcdde6;
+	border-radius: 3px;
+	margin: 10px auto;
 }
 
 .scroll-left {
-    height: 50px;
-    overflow: hidden;
-    position: relative;
+	height: 50px;
+	overflow: hidden;
+	position: relative;
 }
 
 .scroll-left p {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    margin: 0;
-    line-height: 50px;
-    text-align: center;
-    /* Starting position */
-    -moz-transform: translateX(100%);
-    -webkit-transform: translateX(100%);
-    transform: translateX(100%);
-    /* Apply animation to this element */
-    -moz-animation: scroll-left 15s linear infinite;
-    -webkit-animation: scroll-left 15s linear infinite;
-    animation: scroll-left 15s linear infinite;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	line-height: 50px;
+	text-align: center;
+	/* Starting position */
+	-moz-transform: translateX(100%);
+	-webkit-transform: translateX(100%);
+	transform: translateX(100%);
+	/* Apply animation to this element */
+	-moz-animation: scroll-left 15s linear infinite;
+	-webkit-animation: scroll-left 15s linear infinite;
+	animation: scroll-left 15s linear infinite;
 }
-
 
 /* Move it (define the animation) */
 
 @-moz-keyframes scroll-left {
-    0% {
-        -moz-transform: translateX(100%);
-    }
-    100% {
-        -moz-transform: translateX(-100%);
-    }
+	0% {
+		-moz-transform: translateX(100%);
+	}
+	100% {
+		-moz-transform: translateX(-100%);
+	}
 }
 
 @-webkit-keyframes scroll-left {
-    0% {
-        -webkit-transform: translateX(100%);
-    }
-    100% {
-        -webkit-transform: translateX(-100%);
-    }
+	0% {
+		-webkit-transform: translateX(100%);
+	}
+	100% {
+		-webkit-transform: translateX(-100%);
+	}
 }
 
 @keyframes scroll-left {
-    0% {
-        -moz-transform: translateX(100%);
-        /* Browser bug fix */
-        -webkit-transform: translateX(100%);
-        /* Browser bug fix */
-        transform: translateX(100%);
-    }
-    100% {
-        -moz-transform: translateX(-100%);
-        /* Browser bug fix */
-        -webkit-transform: translateX(-100%);
-        /* Browser bug fix */
-        transform: translateX(-100%);
-    }
+	0% {
+		-moz-transform: translateX(100%);
+		/* Browser bug fix */
+		-webkit-transform: translateX(100%);
+		/* Browser bug fix */
+		transform: translateX(100%);
+	}
+	100% {
+		-moz-transform: translateX(-100%);
+		/* Browser bug fix */
+		-webkit-transform: translateX(-100%);
+		/* Browser bug fix */
+		transform: translateX(-100%);
+	}
+}
+
+/* Cards */
+
+.card {
+	position: relative;
+	width: 360px;
+	height: 560px;
+	/* background-color: #eeeeee; */
+	perspective: 1000px;
+}
+
+.card-left-side {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 50%;
+	height: 100%;
+	background: url(./images/background-3.jpeg) no-repeat;
+	background-position-x: 0;
+	background-size: cover;
+	transform: rotateY(0deg);
+	transform-origin: left;
+	transition: transform 1s;
+}
+
+.card-right-side {
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 50%;
+	height: 100%;
+	background: url(./images/background-3.jpeg) no-repeat;
+	background-position-x: -180px;
+	background-size: cover;
+	transform: rotateY(0deg);
+	transform-origin: right;
+	transition: transform 1s;
+}
+
+.card-back-side {
+	display: flex;
+	justify-content: center;
+	align-items: flex-end;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: url(./images/contract.jpg) center no-repeat;
+	background-size: cover;
+	box-shadow: 40px 40px 80px #000;
+	z-index: -1;
+	transform: translateZ(-300px);
+	transition: z-index 0.4s step-end, transform 1s;
+}
+
+.card:hover .card-left-side {
+	transform: rotateY(-360deg);
+}
+
+.card:hover .card-right-side {
+	transform: rotateY(360deg);
+}
+
+.card:hover .card-back-side {
+	transform: translateZ(0);
+	z-index: 1;
+	box-shadow: 50px 50px 100px #000;
+}
+
+.sides {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.title {
+	color: #ffffff;
+	font-size: 35px;
+	margin: 20px 5px;
+}
+
+.recipe {
+	color: #eeeeee;
+	font-size: 25px;
+	margin: 20px 5px;
+}
+
+.card-left-side .title,
+.card-left-side .recipe {
+	text-align: right;
+}
+
+.info {
+	color: #ffffff;
+	font-size: 22px;
+	background-color: rgba(0, 0, 0, 0.5);
+	width: 90%;
+	padding: 10px;
+	text-align: center;
+	margin-bottom: 10px;
 }

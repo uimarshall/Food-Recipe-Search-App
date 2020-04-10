@@ -13,9 +13,10 @@ const Recipes = ({ recipe }) => {
 			<h2>{label}</h2>
 			<img src={image} alt={label} />
 			<a href={url} target="_blank" rel="noopener noreferrer">
-				More Info
+				More Info <i class="fa fa-angle-right"></i>
+				<i class="fa fa-angle-right"></i>
 			</a>
-			<button onClick={handleClick}>Ingredients</button>
+			<button onClick={handleClick}> see ingredients</button>
 			{ingredientshow ? <RecipeDetails ingredients={ingredients} /> : null}
 		</div>
 	);
