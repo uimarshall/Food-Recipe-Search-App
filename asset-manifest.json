@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/Food-Recipe-Search-App/static/css/main.dafc78eb.chunk.css",
+    "main.js": "/Food-Recipe-Search-App/static/js/main.4403076c.chunk.js",
+    "main.js.map": "/Food-Recipe-Search-App/static/js/main.4403076c.chunk.js.map",
+    "runtime-main.js": "/Food-Recipe-Search-App/static/js/runtime-main.aa3db20d.js",
+    "runtime-main.js.map": "/Food-Recipe-Search-App/static/js/runtime-main.aa3db20d.js.map",
+    "static/js/2.4cd21184.chunk.js": "/Food-Recipe-Search-App/static/js/2.4cd21184.chunk.js",
+    "static/js/2.4cd21184.chunk.js.map": "/Food-Recipe-Search-App/static/js/2.4cd21184.chunk.js.map",
+    "index.html": "/Food-Recipe-Search-App/index.html",
+    "precache-manifest.b41935c467d376b2f0918f63cc4fdc25.js": "/Food-Recipe-Search-App/precache-manifest.b41935c467d376b2f0918f63cc4fdc25.js",
+    "service-worker.js": "/Food-Recipe-Search-App/service-worker.js",
+    "static/css/main.dafc78eb.chunk.css.map": "/Food-Recipe-Search-App/static/css/main.dafc78eb.chunk.css.map",
+    "static/js/2.4cd21184.chunk.js.LICENSE.txt": "/Food-Recipe-Search-App/static/js/2.4cd21184.chunk.js.LICENSE.txt",
+    "static/media/index.css": "/Food-Recipe-Search-App/static/media/background-3.83c058d0.jpeg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.aa3db20d.js",
+    "static/js/2.4cd21184.chunk.js",
+    "static/css/main.dafc78eb.chunk.css",
+    "static/js/main.4403076c.chunk.js"
+  ]
+}
