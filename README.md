@@ -4,11 +4,11 @@ This is a project where users can search for food recipe and use it to prepare t
 People running restaurant business will find this app very useful.
 
 > ​
-> ![screenshot](./public/Recipe-Bowl.png)
+> ![screenshot](food-recipe-search/public/Recipe-Bowl.png)
 > ​
 # Ingredients page
 > ​
-> ![screenshot](./public/Recipe-Bowl1.png)
+> ![screenshot](food-recipe-search/public/Recipe-Bowl1.png)
 > 
 # Quick start
 
